@@ -16,11 +16,10 @@ LogInspector is a versatile console application designed to streamline the proce
    
 1. **Provide Input:** Provide the log file you want to analyze.
 
-   ```text
-192.168.0.3:2021-04-09 12:13:36
-192.168.0.4:2021-04-30 08:25:36
-...
-``
+   ```csharp
+   192.168.0.3:2021-04-09 12:13:36
+   192.168.0.4:2021-04-30 08:25:36
+   ...
    
 3. **Adjust Settings:** Adjust filtering criteria either through a configuration file (appsettings.json) or command-line arguments.
    
