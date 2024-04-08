@@ -15,7 +15,7 @@ LogInspector is a versatile console application designed to streamline the proce
 ### Usage
    
 1. **Provide Input:** Provide the log file you want to analyze.
-   Input format:
+   Input file format:
 
    ```csharp
    192.168.0.3:2021-04-09 12:13:36
