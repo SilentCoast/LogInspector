@@ -15,10 +15,36 @@ LogInspector is a versatile console application designed to streamline the proce
 ### Usage
    
 1. **Provide Input:** Provide the log file you want to analyze.
-   
-2. **Adjust Settings:** Adjust filtering criteria either through a configuration file (appsettings.json) or command-line arguments.
-   
-3. **View Output:** View the filtered logs in the specified output location.
 
+   ```text
+192.168.0.3:2021-04-09 12:13:36
+192.168.0.4:2021-04-30 08:25:36
+...
+```
+   
+3. **Adjust Settings:** Adjust filtering criteria either through a configuration file (appsettings.json) or command-line arguments.
+   
+4. **View Output:** View the filtered logs in the specified output location.
+
+**Command-line arguments:**
+- `--file-log`: Path to the log file.
+- `--file-output`: Path to the output file.
+- `--address-start`: Lower bound of the IP address range. Optional parameter; by default, all addresses are processed.
+- `--address-mask`: Subnet mask specifying the upper bound of the address range as a decimal number. Optional parameter. If not specified, all addresses starting from the lower bound are processed. This parameter cannot be used if `address-start` is not specified.
+- `--time-start`: Lower bound of the time interval.
+- `--time-end`: Upper bound of the time interval.
+
+**Example configuration file (`appsettings.json`):**
+```json
+{
+  "LogFile": "log.txt",
+  "OutputFile": "output.txt",
+  "AddressStart": "192.168.0.1",
+  "AddressMask": "10",
+  "TimeStart": "08.04.2021",
+  "TimeEnd": "20.04.2021"
+}
+```
 ### Get Started
 Ready to simplify your log analysis process? Check out LogInspector on GitHub and start using it today!
+
