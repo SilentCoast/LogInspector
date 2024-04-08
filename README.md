@@ -15,15 +15,16 @@ LogInspector is a versatile console application designed to streamline the proce
 ### Usage
    
 1. **Provide Input:** Provide the log file you want to analyze.
+   Input format:
 
    ```csharp
    192.168.0.3:2021-04-09 12:13:36
    192.168.0.4:2021-04-30 08:25:36
    ...
    
-3. **Adjust Settings:** Adjust filtering criteria either through a configuration file (appsettings.json) or command-line arguments.
+2. **Adjust Settings:** Adjust filtering criteria either through a configuration file (appsettings.json) or command-line arguments.
    
-4. **View Output:** View the filtered logs in the specified output location.
+3. **View Output:** View the filtered logs in the specified output location.
 
 **Command-line arguments:**
 - `--file-log`: Path to the log file.
