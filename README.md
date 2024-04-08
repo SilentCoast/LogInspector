@@ -1,4 +1,4 @@
-## LogFilter
+## LogInspector
 
 ### Description
 LogFilter is a versatile tool designed to streamline the process of analyzing logs by providing a user-friendly interface for filtering and displaying log data. With LogFilter, you can easily extract relevant information from log files and present it in a clear and readable format.
